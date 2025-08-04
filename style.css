@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #e6f2f8, #ffffff);
+  color: #222;
+  text-align: center;
+}
+header {
+  background-color: #0f4001;
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.logo {
+  width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+.info, .servicios {
+  padding: 30px 20px;
+  background-color: #ffffffa8;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 12px 0;
+  font-size: 1.1em;
+}
+a {
+  color: #005682;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+.imagen-ubicacion {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+
+  section.contacto {
+  padding: 30px 20px;
+  background-color: #ffffffcc;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+section.contacto h3 {
+  font-size: 1.5em;
+  color: #005682;
+  margin-bottom: 10px;
+}
+
+section.contacto a {
+  color: #005682;
+  text-decoration: none;
+}
+
+section.contacto a:hover {
+  text-decoration: underline;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}

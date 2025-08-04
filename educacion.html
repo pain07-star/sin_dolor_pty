@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educación en Salud - Clínica del Dolor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .contenido {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .contenido img {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      display: block;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    /* Estilos para el visor ampliado */
+    #visor {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.8);
+      align-items: center;
+      justify-content: center;
+    }
+    #visor img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Educación para Pacientes</h1>
+  <div class="contenido">
+    <p>En la Clínica del Dolor del Dr. Juan Pablo Rodríguez López creemos en el poder del conocimiento. Aquí compartimos información útil sobre el manejo del dolor, ejercicios recomendados, y tratamientos modernos disponibles para mejorar tu calidad de vida.</p>
+
+    <h2>¿Qué es el dolor crónico?</h2>
+    <p>El dolor crónico es aquel que persiste por más de tres meses. Puede deberse a múltiples causas como lesiones, enfermedades degenerativas o disfunción del sistema nervioso. Su manejo requiere un enfoque multidisciplinario.</p>
+
+    
+
+  <!-- Visor de imagen ampliada -->
+  <div id="visor" onclick="cerrarVisor()">
+    <img id="imagenGrande" src="">
+  </div>
+
+  <script>
+    function ampliar(imagen) {
+      document.getElementById('imagenGrande').src = imagen.src;
+      document.getElementById('visor').style.display = 'flex';
+    }
+    function cerrarVisor() {
+      document.getElementById('visor').style.display = 'none';
+    }
+  </script>
+
+
+
+<h2>Educación para Pacientes</h2>
+<p>La atención temprana y profesional puede marcar la diferencia. Conoce más sobre estas condiciones:</p>
+<ul>
+    <li><a href="https://www.mayoclinic.org/es/diseases-conditions/back-pain/symptoms-causes/syc-20369906" target="_blank">Lumbalgia y Ciática</a></li>
+    <li><a href="https://www.cancer.gov/about-cancer/treatment/side-effects/pain" target="_blank">Dolor Producido por Cáncer</a></li>
+    <li><a href="https://rheumatology.org/patients/fibromyalgia" target="_blank">Fibromialgia</a></li>
+    <li><a href="https://my.clevelandclinic.org/health/symptoms/21179-neck-pain" target="_blank">Dolor Cervical</a></li>
+    <li><a href="https://www.ninds.nih.gov/health-information/disorders/trigeminal-neuralgia" target="_blank">Neuralgia del Trigémino</a></li>
+    <li><a href="https://www.nhs.uk/conditions/postherpetic-neuralgia/" target="_blank">Neuralgia Postherpética</a></li>
+</ul>
+
+
+
+</body>
+</html>
