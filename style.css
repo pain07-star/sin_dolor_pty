@@ -5,18 +5,21 @@ body {
   color: #222;
   text-align: center;
 }
+
 header {
   background-color: #0f4001;
   color: white;
   padding: 30px 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 .logo {
   width: 350px;
   height: auto;
   display: block;
   margin: 0 auto 20px;
 }
+
 .info, .servicios {
   padding: 30px 20px;
   background-color: #ffffffa8;
@@ -26,28 +29,34 @@ header {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
+
 li {
   margin: 12px 0;
   font-size: 1.1em;
 }
+
 a {
   color: #005682;
   text-decoration: none;
   font-weight: bold;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 footer {
   background-color: #f0f0f0;
   padding: 20px;
   font-size: 0.9em;
   margin-top: 40px;
 }
+
 .imagen-ubicacion {
   width: 300px;
   height: 300px;
@@ -55,8 +64,10 @@ footer {
   display: block;
   margin: 20px auto;
   border-radius: 10px;
+}
 
-  section.contacto {
+/* Contacto */
+section.contacto {
   padding: 30px 20px;
   background-color: #ffffffcc;
   margin: 40px auto;
@@ -80,9 +91,33 @@ section.contacto a {
 section.contacto a:hover {
   text-decoration: underline;
 }
+
+/* WhatsApp */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+}
+
+.whatsapp-float img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* Carrusel responsivo */
+.carousel-img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 40vh;
+  }
 }
