@@ -4,123 +4,90 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Clínica del Dolor - Dr. Juan Pablo Rodríguez López</title>
-  <link rel="stylesheet" href="style.css"/>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; }
+    header { background:#0f4001; }
+    header .navbar-brand, header .nav-link { color:#fff !important; }
+    .hero { padding:80px 0; text-align:center; background:#e9f5ea; }
+    .btn-verde { background:#0f4001; color:#fff; border:none; }
+    .btn-verde:hover { opacity:.9; color:#fff; }
+    .ubicacion { background:#0f4001; color:#fff; padding:20px; text-align:center; }
+    footer { text-align:center; padding:15px; background:#fff; border-top:1px solid #ddd; }
+  </style>
 </head>
-
 <body>
+  <!-- NAV -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Clínica del Dolor</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="procedimientos.html">Procedimientos Regenerativos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-<!-- ENCABEZADO CON LOGO Y CARRUSEL -->
-<header>
-  <div style="text-align: center; padding: 20px;">
-    <img src="logo.png" alt="Logo Clínica del Dolor" style="max-width: 200px; height: auto;">
-  </div>
-
-  <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="A926CAD2-9E3F-43BD-A7D9-BC5E50B9E41E.jpeg" class="d-block w-100 carousel-img" alt="Procedimiento 1">
-      </div>
-      <div class="carousel-item">
-        <img src="E55D0016-C9F8-4654-8ABC-AE943FA21966.jpeg" class="d-block w-100 carousel-img" alt="Procedimiento 2">
-      </div>
-      <div class="carousel-item">
-        <img src="DDCA01A5-CDD3-453F-A21B-8D605C4FBF21.jpeg" class="d-block w-100 carousel-img" alt="Procedimiento 3">
-      </div>
-      <div class="carousel-item">
-        <img src="86B9812A-5100-47FA-A85C-CB8740054367.jpeg" class="d-block w-100 carousel-img" alt="Procedimiento 4">
-      </div>
-      <div class="carousel-item">
-        <img src="clinica.jpg" class="d-block w-100 carousel-img" alt="Fachada de la Clínica">
-      </div>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1>Medicina del Dolor y Procedimientos Regenerativos</h1>
+      <p>Tratamientos avanzados para reducir el dolor y mejorar la calidad de vida.</p>
+      <a href="procedimientos.html" class="btn btn-verde btn-lg mt-3">Ver Procedimientos Regenerativos</a>
     </div>
-  </div>
-</header>
-
-<!-- CONTENIDO PRINCIPAL -->
-<section class="info"></section>
-
-<section id="vision">
-  <section style="text-align:center; padding:30px;">
-    <h2>Accesos Directos</h2>
-    <a href="galeria.html" class="btn btn-primary m-2">Galería de Fotos</a>
-    <a href="educacion.html" class="btn btn-success m-2">Educación para Pacientes</a>
   </section>
 
-  <h2>Visión</h2>
-  <p>En la Clínica del Dolor del Dr. Juan Pablo Rodríguez López, nuestra visión es ser líderes en el manejo integral del dolor crónico en Panamá, proporcionando alivio eficaz, humanizado y basado en evidencia científica. Nos comprometemos a mejorar la calidad de vida de nuestros pacientes mediante tratamientos innovadores y seguros, centrados en la empatía, el respeto y la excelencia clínica.</p>
-</section>
+  <!-- Servicios (resumen) -->
+  <section id="servicios" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-success mb-4">Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow-sm rounded">
+            <h3>Plasma Rico en Plaquetas (PRP)</h3>
+            <p>Indicado en articulaciones, dolor radicular (ciática) y dolor lumbar crónico.</p>
+            <a href="procedimientos.html" class="btn btn-verde">Leer más</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow-sm rounded">
+            <h3>Proloterapia</h3>
+            <p>Tratamiento regenerativo para articulaciones con desgaste e inestabilidad.</p>
+            <a href="procedimientos.html" class="btn btn-verde">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="educacion">
-  <h2>Educación</h2>
-  <p>Fomentamos el conocimiento en salud a través de publicaciones educativas, talleres, y participación activa en congresos médicos nacionales e internacionales. Nuestro compromiso es educar a pacientes y profesionales sobre nuevas alternativas en el tratamiento del dolor.</p>
-</section>
+  <!-- Ubicación -->
+  <div class="ubicacion">
+    📍 Chitré, Centro Especializado de Azuero, consultorio 59<br>
+    📞 WhatsApp: 6654-6636 | Tel. +507 6615-4310
+  </div>
 
-<h3>📍 Ubicación</h3>
-<p>Clínica del Dolor del Dr. Juan Pablo Rodríguez López<br/>
-  Clínica Especializada de Azuero, tercer piso, consultorio 59 - Chitré, Panamá.</p>
-<img alt="Foto de la clínica" class="imagen-ubicacion" src="clinica.jpg"/>
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container text-center">
+      <h2 class="text-success mb-3">Contáctanos</h2>
+      <p>WhatsApp: 6654-6636</p>
+      <p>Teléfono: +507 6615-4310</p>
+      <p>Dirección: Chitré, Centro Especializado de Azuero, tercer piso, consultorio 59</p>
+    </div>
+  </section>
 
-<iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3378485276517!2d-80.43622642527212!3d7.963994204750311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5c6a75ed5e3e23%3A0x6c9508019fe6b4f1!2sClinica%20del%20dolor!5e0!3m2!1ses-419!2spa!4v1754181674371!5m2!1ses-419!2spa"
-        style="border:0; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="100%">
-</iframe>
+  <footer>
+    © <span id="year"></span> Clínica del Dolor - Dr. Juan Pablo Rodríguez López
+  </footer>
 
-<section class="Procedimientos Para el Control del
-  Dolor">
-  <h3>Procedimientos Intervencionistas</h3>
-  <ul>
-    <li><a href="bloqueos.html" target="_blank">Bloqueos nerviosos guiados por imagen</a></li>
-    <li><a href="tecnicas_radiofrecuencia.html" target="_blank">Técnicas de radiofrecuencia</a></li>
-    <li><a href="prp.html" target="_blank">Tratamientos regenerativos</a></li>
-    <li><a href="galeria.html">Galería</a></li>
-  </ul>
-</section>
-
-<section class="contacto">
-  <h3>📬 Contáctanos</h3>
-  <p>Clínica Especializada de Azuero, tercer piso, consultorio 59 - Chitré, Panamá</p>
-  <p>📞 Tel: 6615-4310</p>
-  <p>📱 WhatsApp: <a href="https://wa.me/50766546636" target="_blank">6654-6636</a></p>
-  <p>📧 Correo: <a href="mailto:intervencionismoendolor@gmail.com">intervencionismoendolor@gmail.com</a></p>
-  <a class="boton-whatsapp" href="https://wa.me/50766546636" target="_blank">
-    <span class="icono-whatsapp"></span> Escríbenos por WhatsApp
-  </a>
-</section>
-
-<footer>
-  <p>© 2025 Clínica del Dolor. Todos los derechos reservados.</p>
-</footer>
-
-<!-- ICONO WHATSAPP FLOTANTE -->
-<a class="whatsapp-float" href="https://wa.me/50766546636" target="_blank" title="Escríbenos por WhatsApp">
-  <img src="whatsapp.png" alt="WhatsApp" width="60">
-</a>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Estilos extra -->
-<style>
-  .carousel-img {
-    height: 60vh;
-    object-fit: cover;
-  }
-
-  @media (max-width: 768px) {
-    .carousel-img {
-      height: 40vh;
-    }
-  }
-
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100;
-  }
-</style>
-
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
