@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procedimientos Regenerativos</title>
+  <meta name="description" content="PRP para articulaciones, dolor radicular y lumbar, y Proloterapia para articulaciones en Chitré. Clínica del Dolor - Dr. Juan Pablo Rodríguez López.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --verde:#0f4001;
+      --bg:#f9fafb;
+      --borde:#e7ecef;
+    }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#222;}
+    header{background:var(--verde);}
+    header .navbar-brand, header .nav-link{color:#fff !important;}
+    main.container{max-width:980px;}
+    .breadcrumb a{color:var(--verde); text-decoration:none;}
+    .section-card{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:24px;}
+    .video-wrap{position:relative;width:100%;padding-top:56.25%;background:#000;border-radius:12px;overflow:hidden;}
+    .video-wrap video{position:absolute;inset:0;width:100%;height:100%;}
+    .checklist li{margin-bottom:.4rem;}
+    .cta-box{background:#e9f5ea;border:1px dashed #b9dfbf;border-radius:12px;padding:16px;}
+    footer{background:#fff;border-top:1px solid var(--borde);padding:18px;text-align:center;margin-top:40px;}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Clínica del Dolor</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Procedimientos Regenerativos</li>
+      </ol>
+    </nav>
+
+    <h1 class="text-success text-center mb-2">Procedimientos Regenerativos</h1>
+    <p class="text-center text-muted mb-4">Enfocados en <strong>Plasma Rico en Plaquetas (PRP)</strong> y <strong>Proloterapia</strong>.</p>
+
+    <!-- PRP -->
+    <section class="section-card mb-4">
+      <h2 class="h4">⭐ Plasma Rico en Plaquetas (PRP)</h2>
+      <p>
+        El PRP se obtiene de la sangre del propio paciente, concentrando plaquetas y sus factores de crecimiento.
+        Está indicado para <strong>artrosis y dolor articular</strong>, <strong>dolor radicular (ciática)</strong> y
+        <strong>dolor lumbar crónico</strong>, además de ciertas <strong>lesiones tendinosas</strong>.
+      </p>
+      <ul class="checklist">
+        <li><strong>Beneficios:</strong> acelera la reparación tisular, reduce la inflamación y mejora la movilidad.</li>
+        <li><strong>Procedimiento:</strong> ambulatorio, mínimamente invasivo y guiado según la zona a tratar.</li>
+        <li><strong>Seguridad:</strong> al provenir de tu propia sangre, el riesgo de reacciones es bajo.</li>
+      </ul>
+
+      <!-- Video PRP -->
+      <div class="video-wrap my-3">
+        <video controls preload="metadata" playsinline>
+          <source src="Videoprp.MP4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </section>
+
+    <!-- Proloterapia -->
+    <section class="section-card">
+      <h2 class="h4">⭐ Proloterapia (Articulaciones)</h2>
+      <p>
+        La proloterapia consiste en la aplicación de soluciones regenerativas que estimulan la reparación de
+        <strong>ligamentos y tendones</strong>. Es especialmente útil en <strong>articulaciones con desgaste</strong>
+        o <strong>inestabilidad</strong> (por ejemplo, hombro, rodilla, tobillo y cadera).
+      </p>
+      <ul class="checklist">
+        <li><strong>Objetivo:</strong> fortalecer estructuras de soporte articular.</li>
+        <li><strong>Beneficios:</strong> mejora la estabilidad, disminuye el dolor y favorece la función.</li>
+        <li><strong>Recuperación:</strong> generalmente rápida, con retorno progresivo a la actividad.</li>
+      </ul>
+    </section>
+
+    <div class="cta-box mt-4 text-center">
+      <strong>¿Tienes preguntas o deseas agendar?</strong><br>
+      Escríbenos por WhatsApp al <a href="https://wa.me/50766546636" target="_blank" rel="noopener">6654-6636</a> o llama al <a href="tel:+50766154310">+507 6615-4310</a>.
+    </div>
+
+    <div class="text-center mt-4 fw-semibold text-success">
+      📍 Chitré, Centro Especializado de Azuero, tercer piso, consultorio 59.
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Clínica del Dolor · Dr. Juan Pablo Rodríguez López
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
