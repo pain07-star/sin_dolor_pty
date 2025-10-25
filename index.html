@@ -37,11 +37,10 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="educacion.html">Educación</a></li>
           <li class="nav-item"><a class="nav-link" href="bloqueos.html" target="_blank">Bloqueos guiados</a></li>
           <li class="nav-item"><a class="nav-link" href="tecnicas_radiofrecuencia.html" target="_blank">Radiofrecuencia</a></li>
           <li class="nav-item"><a class="nav-link" href="procedimientos.html" target="_blank">Regenerativos</a></li>
+          <li class="nav-item"><a class="nav-link" href="educacion.html">Educación</a></li>
           <li class="nav-item mt-2">
             <a class="btn btn-success w-100 mb-2" href="https://wa.me/50766546636" target="_blank">WhatsApp 6654-6636</a>
             <a class="btn btn-outline-primary w-100" href="tel:+50766154310">Llamar 6615-4310</a>
@@ -52,7 +51,7 @@
   </div>
 </nav>
 
-<!-- ========= CARRUSEL (SE CONSERVA) ========= -->
+<!-- ========= CARRUSEL ========= -->
 <header>
   <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-inner">
@@ -87,44 +86,83 @@
   </div>
 </header>
 
-<!-- ========= CONTENIDO ========= -->
-<section class="info"></section>
-
-<section id="vision">
-  <section style="text-align:center; padding:30px;">
-    <h2>Accesos Directos</h2>
-    <a href="galeria.html" class="btn btn-primary m-2">Galería de Fotos</a>
-    <a href="educacion.html" class="btn btn-success m-2">Educación para Pacientes</a>
-  </section>
-
+<!-- ========= INFORMACIÓN PRINCIPAL ========= -->
+<section id="vision" class="container py-5">
   <h2>Visión</h2>
   <p>En la Clínica del Dolor del Dr. Juan Pablo Rodríguez López, nuestra visión es ser líderes en el manejo integral del dolor crónico en Panamá, proporcionando alivio eficaz, humanizado y basado en evidencia científica. Nos comprometemos a mejorar la calidad de vida de nuestros pacientes mediante tratamientos innovadores y seguros, centrados en la empatía, el respeto y la excelencia clínica.</p>
 </section>
 
-<section id="educacion">
-  <h2>Educación</h2>
-  <p>Fomentamos el conocimiento en salud a través de publicaciones educativas, talleres, y participación activa en congresos médicos nacionales e internacionales. Nuestro compromiso es educar a pacientes y profesionales sobre nuevas alternativas en el tratamiento del dolor.</p>
-</section>
-
-<h3>📍 Ubicación</h3>
-<p>Clínica del Dolor del Dr. Juan Pablo Rodríguez López<br/>
+<!-- ========= UBICACIÓN ========= -->
+<section class="container text-center">
+  <h3>📍 Ubicación</h3>
+  <p>Clínica del Dolor del Dr. Juan Pablo Rodríguez López<br/>
   Clínica Especializada de Azuero, tercer piso, consultorio 59 - Chitré, Panamá.</p>
-<img alt="Foto de la clínica" class="imagen-ubicacion" src="clinica.jpg"/>
+  <img alt="Foto de la clínica" class="imagen-ubicacion img-fluid rounded shadow" src="clinica.jpg"/>
 
-<iframe allowfullscreen height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+  <iframe allowfullscreen height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3378485276517!2d-80.43622642527212!3d7.963994204750311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5c6a75ed5e3e23%3A0x6c9508019fe6b4f1!2sClinica%20del%20dolor!5e0!3m2!1ses-419!2spa!4v1754181674371!5m2!1ses-419!2spa"
         style="border:0; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="100%">
-</iframe>
+  </iframe>
+</section>
 
-<section class="contacto">
+<!-- ========= NUEVOS ACCESOS DIRECTOS VISUALES ========= -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Accesos Directos</h2>
+  <div class="row g-4">
+    <div class="col-6 col-md-3 text-center">
+      <a href="educacion.html" class="text-decoration-none text-dark">
+        <img src="educacion.jpg" alt="Educación" class="img-fluid rounded shadow">
+        <h5 class="mt-2">Educación</h5>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <a href="bloqueos.html" target="_blank" class="text-decoration-none text-dark">
+        <img src="bloqueos.jpg" alt="Bloqueos guiados" class="img-fluid rounded shadow">
+        <h5 class="mt-2">Bloqueos guiados</h5>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <a href="tecnicas_radiofrecuencia.html" target="_blank" class="text-decoration-none text-dark">
+        <img src="radiofrecuencia.jpg" alt="Radiofrecuencia" class="img-fluid rounded shadow">
+        <h5 class="mt-2">Radiofrecuencia</h5>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <a href="procedimientos.html" target="_blank" class="text-decoration-none text-dark">
+        <img src="regenerativos.jpg" alt="Regenerativos" class="img-fluid rounded shadow">
+        <h5 class="mt-2">Regenerativos</h5>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========= CONTACTO ========= -->
+<section class="contacto text-center bg-light py-5">
   <h3>📬 Contáctanos</h3>
   <p>Clínica Especializada de Azuero, tercer piso, consultorio 59 - Chitré, Panamá</p>
   <p>📞 Tel: +507 6615-4310</p>
   <p>📱 WhatsApp: <a href="https://wa.me/50766546636" target="_blank">6654-6636</a></p>
   <p>📧 Correo: <a href="mailto:intervencionismoendolor@gmail.com">intervencionismoendolor@gmail.com</a></p>
-  <a class="boton-whatsapp" href="https://wa.me/50766546636" target="_blank">
-    <span class="icono-whatsapp"></span> Escríbenos por WhatsApp
-  </a>
+</section>
+
+<!-- ========= FORMULARIO DE CONTACTO ========= -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Envíanos tu mensaje</h2>
+  <form action="mailto:intervencionismoendolor@gmail.com" method="post" enctype="text/plain" class="mx-auto" style="max-width:600px;">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" name="correo" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Enviar mensaje</button>
+  </form>
 </section>
 
 <footer class="text-center py-4 bg-light">
@@ -141,16 +179,11 @@
 
 <!-- ========= Estilos extra ========= -->
 <style>
-  /* Navbar */
   .logo-navbar { height: 40px; width: auto; }
   .logo-offcanvas { height: 28px; width: auto; }
 
-  /* Carrusel estilo “hero” */
   .carousel-img { height: 60vh; object-fit: cover; }
-  .carousel-caption {
-    bottom: 12%;
-    text-shadow: 0 2px 10px rgba(0,0,0,.35);
-  }
+  .carousel-caption { bottom: 12%; text-shadow: 0 2px 10px rgba(0,0,0,.35); }
   .hero-title { font-weight: 700; }
   .hero-sub { font-size: 1.05rem; }
 
@@ -160,7 +193,6 @@
     .hero-sub { font-size: .95rem; }
   }
 
-  /* WhatsApp flotante */
   .whatsapp-float {
     position: fixed; bottom: 20px; right: 20px; z-index: 1000;
   }
