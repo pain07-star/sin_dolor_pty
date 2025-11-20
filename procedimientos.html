@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Tratamientos Regenerativos | Clínica del Dolor de Azuero</title>
 
-  <meta name="description" content="Tratamientos regenerativos como plasma rico en plaquetas (PRP), proloterapia y terapias biológicas para el manejo del dolor crónico en articulaciones, tendones y ligamentos. Clínica del Dolor del Dr. Juan Pablo Rodríguez López, Chitré, Panamá.">
+  <meta name="description" content="Tratamientos regenerativos para el manejo del dolor crónico en articulaciones, tendones y ligamentos en la Clínica del Dolor del Dr. Juan Pablo Rodríguez López, Chitré, Panamá.">
 
   <!-- CSS principal -->
   <link rel="stylesheet" href="style.css"/>
@@ -29,6 +29,11 @@
 
     .navbar-brand img {
       max-height: 60px;
+      height: auto;
+    }
+
+    .nav-link {
+      font-weight: 500;
     }
 
     .nav-link.active {
@@ -74,12 +79,24 @@
       margin-top: 10px;
     }
 
+    .video-wrapper {
+      margin-top: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      background: #000;
+    }
+
     footer {
       background: #005b96;
       color: #fff;
       text-align: center;
       padding: 25px 15px;
       margin-top: 30px;
+    }
+
+    footer p {
+      margin: 5px 0;
     }
 
     .whatsapp-float {
@@ -99,6 +116,12 @@
       text-decoration: none;
       z-index: 999;
     }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+      color: #fff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -110,7 +133,7 @@
       <img src="logo.png" alt="Clínica del Dolor de Azuero">
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Mostrar menú">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -145,8 +168,8 @@
           <a class="nav-link" href="procedimientos.html">Otros procedimientos</a>
         </li>
 
-        <li class="nav-item ms-lg-2">
-          <a class="btn btn-whatsapp-nav" href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20información%20sobre%20tratamientos%20regenerativos.">
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-whatsapp-nav" href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20informaci%C3%B3n%20sobre%20tratamientos%20regenerativos." target="_blank" rel="noopener">
             💬 WhatsApp
           </a>
         </li>
@@ -161,62 +184,71 @@
   <div class="content-card">
 
     <h1>Tratamientos Regenerativos</h1>
-    <p>
-      Los <strong>tratamientos regenerativos</strong> buscan estimular los procesos naturales de reparación del cuerpo 
-      utilizando sustancias derivadas del propio paciente o agentes que promueven la regeneración.  
-      Su objetivo es reducir el dolor y mejorar la función sin cirugía.
-    </p>
 
-    <!-- PRP -->
+    <!-- IMAGEN PRINCIPAL (usa regenerativos.jpg del repositorio) -->
+    <section>
+      <img src="regenerativos.jpg" alt="Tratamientos regenerativos en Clínica del Dolor de Azuero">
+      <p class="mt-3">
+        Los <strong>tratamientos regenerativos</strong> buscan aprovechar la capacidad natural del
+        organismo para reparar tejidos lesionados, disminuir el dolor y mejorar la función,
+        especialmente en <strong>articulaciones</strong>, <strong>tendones</strong> y
+        <strong>ligamentos</strong>.
+      </p>
+      <p>
+        Se utilizan sustancias obtenidas del propio paciente o soluciones que estimulan una
+        respuesta reparativa local. La indicación es siempre <strong>individual</strong> y se decide
+        tras una valoración médica completa.
+      </p>
+    </section>
+
+    <!-- VIDEO DE PRP (Videoprp.MP4 del repositorio) -->
+    <section>
+      <h2>Video explicativo de Plasma Rico en Plaquetas (PRP)</h2>
+      <p>
+        En este video se muestra, de forma general, el proceso de preparación y aplicación del
+        <strong>plasma rico en plaquetas</strong> como herramienta dentro del manejo intervencionista del dolor.
+      </p>
+
+      <div class="video-wrapper">
+        <video width="100%" controls poster="regenerativos.jpg">
+          <source src="Videoprp.MP4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+
+      <p class="mt-2 small text-muted">
+        *El video es de carácter educativo y no sustituye una valoración médica presencial.*
+      </p>
+    </section>
+
+    <!-- DESCRIPCIÓN PRP -->
     <section>
       <h2>Plasma Rico en Plaquetas (PRP)</h2>
       <p>
-        El PRP se obtiene mediante una extracción de sangre del paciente que luego se centrifuga para concentrar 
-        las plaquetas. Estas contienen factores de crecimiento que ayudan en la reparación de tejidos.
+        El <strong>PRP</strong> se obtiene a partir de una muestra de sangre del propio paciente, la cual
+        se centrifuga para concentrar las plaquetas. Estas liberan factores de crecimiento que pueden
+        favorecer la reparación de tejidos dañados.
       </p>
-
       <ul>
-        <li>Ideal para artrosis de rodilla, cadera y hombro.</li>
-        <li>Eficaz en tendinitis crónica (codo, hombro, Aquiles).</li>
-        <li>Puede reducir dolor y mejorar movilidad.</li>
+        <li>Artrosis de rodilla, cadera y hombro.</li>
+        <li>Tendinitis crónica (hombro, codo, talón de Aquiles).</li>
+        <li>Lesiones por sobreuso en deportistas recreativos.</li>
       </ul>
-
-      <img src="prp.jpg" alt="Plasma rico en plaquetas PRP">
     </section>
 
-    <!-- Proloterapia -->
+    <!-- DESCRIPCIÓN GENERAL OTRAS TERAPIAS -->
     <section>
-      <h2>Proloterapia</h2>
+      <h2>Otras terapias regenerativas</h2>
       <p>
-        Consiste en la aplicación de soluciones que estimulan una respuesta reparativa local, 
-        fortaleciendo ligamentos y tendones dañados.
+        Dependiendo del caso, pueden considerarse otras alternativas regenerativas o combinaciones
+        terapéuticas. Siempre se siguen las <strong>guías internacionales</strong> y criterios de seguridad,
+        evitando promesas exageradas o resultados milagrosos.
       </p>
-
-      <ul>
-        <li>Dolor crónico por laxitud ligamentaria.</li>
-        <li>Inestabilidad articular.</li>
-        <li>Lumbalgia crónica de origen mecánico.</li>
-      </ul>
-
-      <img src="proloterapia.jpg" alt="Proloterapia">
-    </section>
-
-    <!-- Terapias biológicas -->
-    <section>
-      <h2>Terapias Biológicas Avanzadas</h2>
-      <p>
-        En casos seleccionados, pueden utilizarse derivados celulares o concentrados biológicos
-        siguiendo guías internacionales y criterios de seguridad estrictos.
+      <p class="small text-muted">
+        *No todos los pacientes son candidatos para tratamientos regenerativos. La decisión se realiza
+        tras una valoración médica detallada, revisión de estudios de imagen y del historial clínico.*
       </p>
-
-      <p class="small text-muted">*No se prometen resultados milagrosos. Cada caso se evalúa de forma individual.*</p>
-
-      <img src="celulas.jpg" alt="Terapias biológicas avanzadas">
     </section>
-
-    <p class="mt-3 text-muted small">
-      *Los tratamientos regenerativos son indicados luego de una evaluación médica completa.*
-    </p>
 
   </div>
 </main>
@@ -229,7 +261,7 @@
 </footer>
 
 <!-- BOTÓN FLOTANTE WHATSAPP -->
-<a href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20agendar%20una%20cita%20para%20tratamientos%20regenerativos." class="whatsapp-float" aria-label="WhatsApp">
+<a href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20agendar%20una%20cita%20para%20tratamientos%20regenerativos." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp Clínica del Dolor">
   💬
 </a>
 
