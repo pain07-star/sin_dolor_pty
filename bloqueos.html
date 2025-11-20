@@ -3,76 +3,283 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Bloqueos Nerviosos Guiados por Imágenes - Clínica del Dolor</title>
+  <title>Bloqueos Nerviosos Guiados por Imágenes | Clínica del Dolor de Azuero</title>
+
+  <meta name="description" content="Bloqueos nerviosos guiados por ultrasonido y fluoroscopia para el manejo intervencionista del dolor en la Clínica del Dolor del Dr. Juan Pablo Rodríguez López, Chitré, Panamá.">
+
+  <!-- CSS principal del sitio -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .navbar-brand img {
+      max-height: 60px;
+      height: auto;
+    }
+
+    .nav-link {
+      font-weight: 500;
+    }
+
+    .nav-link.active {
+      color: #005b96 !important;
+    }
+
+    .btn-whatsapp-nav {
+      background-color: #25D366;
+      color: #fff !important;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 6px 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-whatsapp-nav span {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .content-card {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    h1, h2, h3, h4 {
+      color: #005b96;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    figure {
+      background: #fafafa;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #005b96;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 1em;
+      line-height: 1.6;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* BOTÓN FLOTANTE WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      width: 56px;
+      height: 56px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #FFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .whatsapp-float span {
+      margin-top: 2px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container py-4">
-  <h1 class="text-success mb-3">Bloqueos Nerviosos Guiados por Imágenes</h1>
-  <p>
-    Los <strong>bloqueos nerviosos</strong> son procedimientos mínimamente invasivos
-    que alivian el dolor inyectando anestésicos locales y/o antiinflamatorios cerca de
-    un nervio o articulación. Para lograr mayor seguridad y precisión usamos
-    <strong>ultrasonido</strong> y/o <strong>fluoroscopia (rayos X en tiempo real)</strong>,
-    lo que permite colocar la medicación exactamente donde se necesita.
-  </p>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="Clínica del Dolor de Azuero">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <h4>¿Cuándo se indican?</h4>
-  <ul>
-    <li>Dolor de cuello, espalda o extremidades por artrosis, hernias o sobrecarga.</li>
-    <li>Neuralgias (dolor por irritación de un nervio).</li>
-    <li>Dolor posterior a cirugías o lesiones.</li>
-    <li>Como prueba diagnóstica para confirmar el origen del dolor.</li>
-  </ul>
-
-  <h4>Beneficios</h4>
-  <ul>
-    <li>Alta precisión gracias a la guía por imágenes.</li>
-    <li>Procedimiento ambulatorio con recuperación rápida.</li>
-    <li>Puede disminuir la necesidad de analgésicos orales.</li>
-  </ul>
-
-  <h4>¿Cómo se realiza?</h4>
-  <p>
-    Te colocamos en una posición cómoda, limpiamos la piel y aplicamos anestesia local.
-    Luego, guiados por ultrasonido o fluoroscopia, posicionamos una aguja fina y
-    administramos el medicamento. Tras unos minutos de observación puedes regresar a casa
-    con indicaciones claras.
-  </p>
-
-  <div class="row g-3 mt-4">
-    <div class="col-md-6">
-      <figure class="border rounded p-2">
-        <img src="images/bloqueos/FC299182-9C1B-4522-9688-82D6CAE757BD_web_web.jpg" class="img-fluid rounded" alt="Fluoroscopia columna lumbar">
-        <figcaption class="mt-2 small text-muted">Fluoroscopia: rayos X en tiempo real para ver la anatomía de la columna y planificar el punto exacto de tratamiento.</figcaption>
-      </figure>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="educacion.html">Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="bloqueos.html">Bloqueos guiados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tecnicas_radiofrecuencia.html">Radiofrecuencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="procedimientos.html">Otros procedimientos</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-whatsapp-nav" href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20información%20sobre%20bloqueos%20nerviosos%20guiados." target="_blank" rel="noopener">
+              <span>💬</span> WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-6">
-      <figure class="border rounded p-2">
-        <img src="images/bloqueos/0D54DD62-678A-4C94-BECA-EF98E73100BA_web_web.jpg" class="img-fluid rounded" alt="Aguja posicionada bajo fluoroscopia">
-        <figcaption class="mt-2 small text-muted">Posición precisa de la aguja bajo fluoroscopia. Esto aumenta la eficacia y ayuda a reducir riesgos.</figcaption>
-      </figure>
-    </div>
-    <div class="col-md-6">
-      <figure class="border rounded p-2">
-        <img src="images/bloqueos/C9461736-8939-4E7B-AEBC-5A28A2D06F95_web_web.jpg" class="img-fluid rounded" alt="Ultrasonido región lumbar">
-        <figcaption class="mt-2 small text-muted">Ultrasonido: permite ver tejidos blandos (músculos, vasos, trayecto del nervio) y dirigir la medicación sin radiación.</figcaption>
-      </figure>
-    </div>
-    <div class="col-md-6">
-      <figure class="border rounded p-2">
-        <img src="images/bloqueos/27BBC601-D00D-4B45-822A-1F080B39D343_web_web.jpg" class="img-fluid rounded" alt="Procedimiento ambulatorio con guía por imágenes">
-        <figcaption class="mt-2 small text-muted">Procedimiento ambulatorio con medidas estrictas de asepsia y monitoreo.</figcaption>
-      </figure>
-    </div>
-  </div>
+  </nav>
 
-  <p class="mt-3 text-muted small">*La indicación del procedimiento es individual y se decide tras valoración médica.*</p>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <div class="content-card">
+      <h1>Bloqueos Nerviosos Guiados por Imágenes</h1>
 
-  <a href="index.html" class="btn btn-outline-success mt-4">⬅ Volver a Inicio</a>
-</div>
+      <section>
+        <p>
+          Los <strong>bloqueos nerviosos</strong> son procedimientos mínimamente invasivos
+          que alivian el dolor inyectando anestésicos locales y/o antiinflamatorios cerca de
+          un nervio o articulación. Para lograr mayor seguridad y precisión usamos
+          <strong>ultrasonido</strong> y/o <strong>fluoroscopia (rayos X en tiempo real)</strong>,
+          lo que permite colocar la medicación exactamente donde se necesita.
+        </p>
+      </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <section>
+        <h4>¿Cuándo se indican?</h4>
+        <ul>
+          <li>Dolor de cuello, espalda o extremidades por artrosis, hernias o sobrecarga.</li>
+          <li>Neuralgias (dolor por irritación de un nervio).</li>
+          <li>Dolor posterior a cirugías o lesiones.</li>
+          <li>Como prueba diagnóstica para confirmar el origen del dolor.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Beneficios</h4>
+        <ul>
+          <li>Alta precisión gracias a la guía por imágenes.</li>
+          <li>Procedimiento ambulatorio con recuperación rápida.</li>
+          <li>Puede disminuir la necesidad de analgésicos orales.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>¿Cómo se realiza?</h4>
+        <p>
+          Te colocamos en una posición cómoda, limpiamos la piel y aplicamos anestesia local.
+          Luego, guiados por ultrasonido o fluoroscopia, posicionamos una aguja fina y
+          administramos el medicamento. Tras unos minutos de observación puedes regresar a casa
+          con indicaciones claras.
+        </p>
+      </section>
+
+      <section>
+        <div class="row g-3 mt-2">
+          <div class="col-md-6">
+            <figure class="border rounded p-2">
+              <img src="images/bloqueos/FC299182-9C1B-4522-9688-82D6CAE757BD_web_web.jpg" class="img-fluid rounded" alt="Fluoroscopia columna lumbar">
+              <figcaption class="mt-2 small text-muted">
+                Fluoroscopia: rayos X en tiempo real para ver la anatomía de la columna y planificar el punto exacto de tratamiento.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="border rounded p-2">
+              <img src="images/bloqueos/0D54DD62-678A-4C94-BECA-EF98E73100BA_web_web.jpg" class="img-fluid rounded" alt="Aguja posicionada bajo fluoroscopia">
+              <figcaption class="mt-2 small text-muted">
+                Posición precisa de la aguja bajo fluoroscopia. Esto aumenta la eficacia y ayuda a reducir riesgos.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="border rounded p-2">
+              <img src="images/bloqueos/C9461736-8939-4E7B-AEBC-5A28A2D06F95_web_web.jpg" class="img-fluid rounded" alt="Ultrasonido región lumbar">
+              <figcaption class="mt-2 small text-muted">
+                Ultrasonido: permite ver tejidos blandos (músculos, vasos, trayecto del nervio) y dirigir la medicación sin radiación.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="border rounded p-2">
+              <img src="images/bloqueos/27BBC601-D00D-4B45-822A-1F080B39D343_web_web.jpg" class="img-fluid rounded" alt="Procedimiento ambulatorio con guía por imágenes">
+              <figcaption class="mt-2 small text-muted">
+                Procedimiento ambulatorio con medidas estrictas de asepsia y monitoreo.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <p class="mt-3 text-muted small">
+        *La indicación del procedimiento es individual y se decide tras valoración médica.*
+      </p>
+
+      <a href="index.html" class="btn btn-outline-primary mt-4">⬅ Volver a Inicio</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Clínica del Dolor del Dr. Juan Pablo Rodríguez López</strong></p>
+    <p>Clínica Especializada de Azuero, tercer piso, consultorio 59 – Chitré, Panamá</p>
+    <p>📞 WhatsApp: 6654-6636 | 📞 Teléfono: +507 6615-4310</p>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20agendar%20una%20cita%20para%20bloqueos%20nerviosos%20guiados." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp Clínica del Dolor">
+    <span>💬</span>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
