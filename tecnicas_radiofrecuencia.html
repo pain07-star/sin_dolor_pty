@@ -1,46 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Técnicas de Radiofrecuencia | Clínica del Dolor</title>
+  <title>Técnicas de Radiofrecuencia | Clínica del Dolor de Azuero</title>
+
+  <meta name="description" content="Técnicas de radiofrecuencia para el manejo intervencionista del dolor en columna y articulaciones en la Clínica del Dolor del Dr. Juan Pablo Rodríguez López, Chitré, Panamá.">
+
+  <!-- CSS principal del sitio -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Bootstrap CSS (para el menú hamburguesa y estructura responsive) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       background: #f4f4f4;
       margin: 0;
       padding: 0;
       color: #333;
+      font-family: Arial, sans-serif;
     }
-    header {
-      background: #fff;
-      text-align: center;
-      padding: 30px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     }
-    header img {
-      max-width: 280px;
+
+    .navbar-brand img {
+      max-height: 60px;
+      height: auto;
     }
+
+    .nav-link {
+      font-weight: 500;
+    }
+
+    .nav-link.active {
+      color: #005b96 !important;
+    }
+
+    .btn-whatsapp-nav {
+      background-color: #25D366;
+      color: #fff !important;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 6px 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-whatsapp-nav span {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    /* CONTENIDO PRINCIPAL */
     main {
       max-width: 900px;
       margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .content-card {
       background: #fff;
       padding: 30px 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
     }
+
+    h1, h2, h3 {
+      color: #005b96;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
     section {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
+
     section img {
       max-width: 100%;
       border-radius: 8px;
       margin-top: 10px;
     }
-    h2, h3 {
-      color: #005b96;
-    }
+
+    /* FOOTER */
     footer {
       background: #005b96;
       color: #fff;
@@ -48,72 +100,154 @@
       padding: 25px 15px;
       font-size: 1em;
       line-height: 1.6;
+      margin-top: 30px;
     }
+
     footer p {
       margin: 5px 0;
+    }
+
+    /* BOTÓN FLOTANTE WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      width: 56px;
+      height: 56px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #FFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .whatsapp-float span {
+      margin-top: 2px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo_clinica.jpg" alt="Logo Clínica del Dolor">
-  </header>
+  <!-- NAVBAR CON ESTILO HAMBURGUESA -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <!-- Usa el logo principal del sitio -->
+        <img src="logo.png" alt="Clínica del Dolor de Azuero">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="educacion.html">Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bloqueos.html">Bloqueos guiados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tecnicas_radiofrecuencia.html">Radiofrecuencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="procedimientos.html">Otros procedimientos</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-whatsapp-nav" href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20información%20sobre%20tratamientos%20para%20el%20dolor." target="_blank" rel="noopener">
+              <span>💬</span> WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
-    <section>
-      <h2>¿Qué es la Radiofrecuencia para el Control del Dolor?</h2>
-      <p>La radiofrecuencia es un procedimiento médico mínimamente invasivo que utiliza corriente eléctrica de alta frecuencia para interrumpir la señal de dolor en nervios específicos. Se realiza mediante agujas especiales bajo guía de imagen, aplicando calor controlado sobre los nervios responsables del dolor.</p>
-      <ul>
-        <li>Procedimiento ambulatorio</li>
-        <li>No requiere cirugía</li>
-        <li>Alivio prolongado</li>
-        <li>Menor uso de medicamentos</li>
-      </ul>
-    </section>
+    <div class="content-card">
+      <h1>Técnicas de Radiofrecuencia para el Control del Dolor</h1>
 
-    <section>
-      <h3>Radiofrecuencia en Columna Lumbar</h3>
-      <p>Indicada para dolor lumbar crónico, causado por artrosis de las articulaciones facetarias. Se aplica sobre los ramos mediales lumbares, bloqueando la transmisión del dolor.</p>
-      <img src="radiofrecuencia_lumbar.jpg" alt="Radiofrecuencia lumbar">
-    </section>
+      <section>
+        <h2>¿Qué es la Radiofrecuencia?</h2>
+        <p>La radiofrecuencia es un procedimiento médico mínimamente invasivo que utiliza corriente eléctrica de alta frecuencia para interrumpir la señal de dolor en nervios específicos. Se realiza mediante agujas especiales bajo guía de imagen, aplicando calor controlado sobre los nervios responsables del dolor.</p>
+        <ul>
+          <li>Procedimiento ambulatorio</li>
+          <li>No requiere cirugía</li>
+          <li>Alivio prolongado</li>
+          <li>Menor uso de medicamentos</li>
+        </ul>
+      </section>
 
-    <section>
-      <h3>Radiofrecuencia en Columna Dorsal</h3>
-      <p>Se utiliza en pacientes con dolor en la región media de la espalda, generalmente asociado a cambios degenerativos en las articulaciones facetarias torácicas. El objetivo es desactivar los ramos mediales torácicos.</p>
-      <img src="IMG_0214.jpg" alt="Radiofrecuencia Dorsal">
-    </section>
+      <section>
+        <h3>Radiofrecuencia en Columna Lumbar</h3>
+        <p>Indicada para dolor lumbar crónico, causado por artrosis de las articulaciones facetarias. Se aplica sobre los ramos mediales lumbares, bloqueando la transmisión del dolor.</p>
+        <img src="radiofrecuencia_lumbar.jpg" alt="Radiofrecuencia lumbar">
+      </section>
 
-    <section>
-      <h3>Radiofrecuencia en Columna Cervical</h3>
-      <p>Aplicada en pacientes con dolor crónico de cuello, generalmente por artrosis cervical. Se realiza sobre los ramos mediales cervicales que transmiten el dolor desde las articulaciones facetarias del cuello.</p>
-      <img src="radiofrecuencia_cervical_ilustrada.jpg" alt="Radiofrecuencia cervical">
-    </section>
+      <section>
+        <h3>Radiofrecuencia en Columna Dorsal</h3>
+        <p>Se utiliza en pacientes con dolor en la región media de la espalda, generalmente asociado a cambios degenerativos en las articulaciones facetarias torácicas. El objetivo es desactivar los ramos mediales torácicos.</p>
+        <img src="IMG_0214.jpg" alt="Radiofrecuencia dorsal">
+      </section>
 
-    <section>
-      <h3>Radiofrecuencia en Articulaciones: Rodilla</h3>
-      <p>Se usa para tratar dolor crónico de rodilla, comúnmente por artrosis. La técnica se enfoca en bloquear los nervios geniculados, reduciendo el dolor sin afectar el movimiento.</p>
-      <img src="radiofrecuencia_rodilla.jpg" alt="Radiofrecuencia en rodilla">
-    </section>
+      <section>
+        <h3>Radiofrecuencia en Columna Cervical</h3>
+        <p>Aplicada en pacientes con dolor crónico de cuello, generalmente por artrosis cervical. Se realiza sobre los ramos mediales cervicales que transmiten el dolor desde las articulaciones facetarias del cuello.</p>
+        <img src="radiofrecuencia_cervical_ilustrada.jpg" alt="Radiofrecuencia cervical">
+      </section>
 
-    <section>
-      <h3>Radiofrecuencia en Articulaciones: Cadera</h3>
-      <p>Indicada para pacientes con artrosis de cadera o dolor persistente luego de reemplazo articular. Se aplican pulsos de radiofrecuencia sobre los nervios sensitivos que rodean la articulación.</p>
-      <img src="Cadera.jpg" alt="Radiofrecuencia de Cadera">
-    </section>
+      <section>
+        <h3>Radiofrecuencia en Articulaciones: Rodilla</h3>
+        <p>Se usa para tratar dolor crónico de rodilla, comúnmente por artrosis. La técnica se enfoca en bloquear los nervios geniculados, reduciendo el dolor sin afectar el movimiento.</p>
+        <img src="radiofrecuencia_rodilla.jpg" alt="Radiofrecuencia en rodilla">
+      </section>
 
-    <section>
-      <h3>Radiofrecuencia en Articulaciones: Hombro</h3>
-      <p>Útil en pacientes con dolor de hombro crónico por artrosis o tendinopatías avanzadas. Se actúa sobre los nervios supraescapular, axilar y subescapular.</p>
-      <img src="Rfhombro.jpg" alt="Radiofrecuencia en Hombro">
-    </section>
+      <section>
+        <h3>Radiofrecuencia en Articulaciones: Cadera</h3>
+        <p>Indicada para pacientes con artrosis de cadera o dolor persistente luego de reemplazo articular. Se aplican pulsos de radiofrecuencia sobre los nervios sensitivos que rodean la articulación.</p>
+        <img src="Cadera.jpg" alt="Radiofrecuencia de cadera">
+      </section>
+
+      <section>
+        <h3>Radiofrecuencia en Articulaciones: Hombro</h3>
+        <p>Útil en pacientes con dolor de hombro crónico por artrosis o tendinopatías avanzadas. Se actúa sobre los nervios supraescapular, axilar y subescapular.</p>
+        <img src="Rfhombro.jpg" alt="Radiofrecuencia en hombro">
+      </section>
+    </div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p><strong>Clínica del Dolor del Dr. Juan Pablo Rodríguez López</strong></p>
-    <p>Clínica de Especialidades de Azuero, tercer piso, consultorio 59 – Chitré, Panamá</p>
+    <p>Clínica Especializada de Azuero, tercer piso, consultorio 59 – Chitré, Panamá</p>
     <p>📞 WhatsApp: 6654-6636 | 📞 Teléfono: +507 6615-4310</p>
   </footer>
 
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20agendar%20una%20cita%20para%20control%20del%20dolor." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp Clínica del Dolor">
+    <span>💬</span>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
