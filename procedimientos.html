@@ -1,115 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Procedimientos Regenerativos</title>
-  <meta name="description" content="PRP para articulaciones, dolor radicular y lumbar, y Proloterapia para articulaciones en Chitré. Clínica del Dolor - Dr. Juan Pablo Rodríguez López.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Procedimientos Intervencionistas | Clínica del Dolor de Azuero</title>
+
+  <meta name="description" content="Procedimientos intervencionistas para el manejo del dolor: bloqueos nerviosos guiados por imágenes, radiofrecuencia y tratamientos regenerativos en la Clínica del Dolor del Dr. Juan Pablo Rodríguez López, Chitré, Panamá.">
+
+  <!-- CSS principal del sitio -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
-    :root{
-      --verde:#0f4001;
-      --bg:#f9fafb;
-      --borde:#e7ecef;
+    body {
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      font-family: Arial, sans-serif;
     }
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#222;}
-    header{background:var(--verde);}
-    header .navbar-brand, header .nav-link{color:#fff !important;}
-    main.container{max-width:980px;}
-    .breadcrumb a{color:var(--verde); text-decoration:none;}
-    .section-card{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:24px;}
-    .video-wrap{position:relative;width:100%;padding-top:56.25%;background:#000;border-radius:12px;overflow:hidden;}
-    .video-wrap video{position:absolute;inset:0;width:100%;height:100%;}
-    .checklist li{margin-bottom:.4rem;}
-    .cta-box{background:#e9f5ea;border:1px dashed #b9dfbf;border-radius:12px;padding:16px;}
-    footer{background:#fff;border-top:1px solid var(--borde);padding:18px;text-align:center;margin-top:40px;}
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .navbar-brand img {
+      max-height: 60px;
+      height: auto;
+    }
+
+    .nav-link {
+      font-weight: 500;
+    }
+
+    .nav-link.active {
+      color: #005b96 !important;
+    }
+
+    .btn-whatsapp-nav {
+      background-color: #25D366;
+      color: #fff !important;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 6px 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-whatsapp-nav span {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .content-card {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    h1, h2, h3 {
+      color: #005b96;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .procedure-card img {
+      max-height: 180px;
+      object-fit: cover;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #005b96;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 1em;
+      line-height: 1.6;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* BOTÓN FLOTANTE WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      width: 56px;
+      height: 56px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #FFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .whatsapp-float span {
+      margin-top: 2px;
+    }
   </style>
 </head>
 <body>
-  <!-- NAV -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Clínica del Dolor</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Menú">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
-          </ul>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="Clínica del Dolor de Azuero">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="educacion.html">Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bloqueos.html">Bloqueos guiados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tecnicas_radiofrecuencia.html">Radiofrecuencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="procedimientos.html">Otros procedimientos</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-whatsapp-nav" href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20información%20sobre%20los%20procedimientos%20para%20el%20control%20del%20dolor." target="_blank" rel="noopener">
+              <span>💬</span> WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <div class="content-card">
+      <h1>Procedimientos Intervencionistas para el Manejo del Dolor</h1>
+
+      <p class="mb-4">
+        En la <strong>Clínica del Dolor de Azuero</strong> ofrecemos distintos procedimientos
+        mínimamente invasivos para tratar el dolor de forma precisa, buscando reducir la
+        necesidad de cirugías mayores y el uso prolongado de medicamentos.
+      </p>
+
+      <p class="mb-4">
+        Todos los procedimientos se realizan bajo estrictas medidas de seguridad, con guía
+        por imágenes cuando está indicada, y tras una valoración personalizada del paciente.
+      </p>
+
+      <h2 class="h4 mb-3">Principales procedimientos</h2>
+
+      <div class="row g-4 mt-1">
+        <!-- BLOQUEOS -->
+        <div class="col-md-4">
+          <div class="card procedure-card h-100 shadow-sm">
+            <img src="bloqueos.jpg" class="card-img-top" alt="Bloqueos nerviosos guiados por imágenes">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Bloqueos nerviosos guiados</h3>
+              <p class="card-text small">
+                Inyecciones de medicamentos cerca de nervios o articulaciones, guiadas por
+                <strong>ultrasonido</strong> o <strong>fluoroscopia</strong>, para aliviar el dolor de forma localizada.
+              </p>
+              <a href="bloqueos.html" class="btn btn-primary mt-auto">Ver más sobre bloqueos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RADIOFRECUENCIA -->
+        <div class="col-md-4">
+          <div class="card procedure-card h-100 shadow-sm">
+            <img src="radiofrecuencia.jpg" class="card-img-top" alt="Técnicas de radiofrecuencia">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Radiofrecuencia</h3>
+              <p class="card-text small">
+                Tratamiento que utiliza corriente de alta frecuencia para modular o bloquear
+                la transmisión del dolor en <strong>columna</strong> y <strong>articulaciones</strong>.
+              </p>
+              <a href="tecnicas_radiofrecuencia.html" class="btn btn-primary mt-auto">Ver técnicas de radiofrecuencia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRATAMIENTOS REGENERATIVOS -->
+        <div class="col-md-4">
+          <div class="card procedure-card h-100 shadow-sm">
+            <img src="regenerativos.jpg" class="card-img-top" alt="Tratamientos regenerativos">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Tratamientos regenerativos</h3>
+              <p class="card-text small">
+                Uso de terapias biológicas como <strong>plasma rico en plaquetas (PRP)</strong> y
+                otros enfoques regenerativos para favorecer la reparación de tejidos y
+                disminuir el dolor crónico.
+              </p>
+              <!-- Cuando tenga lista la página, solo cree 'regenerativos.html' y este enlace funcionará -->
+              <a href="regenerativos.html" class="btn btn-outline-primary mt-auto">Más sobre regenerativos</a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
 
-  <main class="container py-5">
-    <nav aria-label="breadcrumb" class="mb-3">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Procedimientos Regenerativos</li>
-      </ol>
-    </nav>
-
-    <h1 class="text-success text-center mb-2">Procedimientos Regenerativos</h1>
-    <p class="text-center text-muted mb-4">Enfocados en <strong>Plasma Rico en Plaquetas (PRP)</strong> y <strong>Proloterapia</strong>.</p>
-
-    <!-- PRP -->
-    <section class="section-card mb-4">
-      <h2 class="h4">⭐ Plasma Rico en Plaquetas (PRP)</h2>
-      <p>
-        El PRP se obtiene de la sangre del propio paciente, concentrando plaquetas y sus factores de crecimiento.
-        Está indicado para <strong>artrosis y dolor articular</strong>, <strong>dolor radicular (ciática)</strong> y
-        <strong>dolor lumbar crónico</strong>, además de ciertas <strong>lesiones tendinosas</strong>.
+      <p class="mt-4 text-muted small">
+        *La indicación de cada procedimiento es individual y se decide tras una valoración
+        médica completa del paciente.*
       </p>
-      <ul class="checklist">
-        <li><strong>Beneficios:</strong> acelera la reparación tisular, reduce la inflamación y mejora la movilidad.</li>
-        <li><strong>Procedimiento:</strong> ambulatorio, mínimamente invasivo y guiado según la zona a tratar.</li>
-        <li><strong>Seguridad:</strong> al provenir de tu propia sangre, el riesgo de reacciones es bajo.</li>
-      </ul>
-
-      <!-- Video PRP -->
-      <div class="video-wrap my-3">
-        <video controls preload="metadata" playsinline>
-          <source src="Videoprp.MP4" type="video/mp4">
-          Tu navegador no soporta la reproducción de video.
-        </video>
-      </div>
-    </section>
-
-    <!-- Proloterapia -->
-    <section class="section-card">
-      <h2 class="h4">⭐ Proloterapia (Articulaciones)</h2>
-      <p>
-        La proloterapia consiste en la aplicación de soluciones regenerativas que estimulan la reparación de
-        <strong>ligamentos y tendones</strong>. Es especialmente útil en <strong>articulaciones con desgaste</strong>
-        o <strong>inestabilidad</strong> (por ejemplo, hombro, rodilla, tobillo y cadera).
-      </p>
-      <ul class="checklist">
-        <li><strong>Objetivo:</strong> fortalecer estructuras de soporte articular.</li>
-        <li><strong>Beneficios:</strong> mejora la estabilidad, disminuye el dolor y favorece la función.</li>
-        <li><strong>Recuperación:</strong> generalmente rápida, con retorno progresivo a la actividad.</li>
-      </ul>
-    </section>
-
-    <div class="cta-box mt-4 text-center">
-      <strong>¿Tienes preguntas o deseas agendar?</strong><br>
-      Escríbenos por WhatsApp al <a href="https://wa.me/50766546636" target="_blank" rel="noopener">6654-6636</a> o llama al <a href="tel:+50766154310">+507 6615-4310</a>.
-    </div>
-
-    <div class="text-center mt-4 fw-semibold text-success">
-      📍 Chitré, Centro Especializado de Azuero, tercer piso, consultorio 59.
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    © <span id="year"></span> Clínica del Dolor · Dr. Juan Pablo Rodríguez López
+    <p><strong>Clínica del Dolor del Dr. Juan Pablo Rodríguez López</strong></p>
+    <p>Clínica Especializada de Azuero, tercer piso, consultorio 59 – Chitré, Panamá</p>
+    <p>📞 WhatsApp: 6654-6636 | 📞 Teléfono: +507 6615-4310</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/50766546636?text=Hola%20doctor,%20quisiera%20agendar%20una%20cita%20para%20evaluar%20mi%20dolor." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp Clínica del Dolor">
+    <span>💬</span>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
